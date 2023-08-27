@@ -102,11 +102,16 @@ The language consists of a lexer, a parser, and an evaluator. Here's how it work
 - **Preprocessor**: Preprocessor to look for any issues prior to interpreting and starting the lexical analysis. Ends w/ `;`
 > Ending w/ `;` doesn't work rn because it looks for what command is after it and doesn't see anything, so it gets confused.
 - **Step-by-Step Problem Solving**: Implement a step-by-step problem-solving feature.
-- **Variable Substitution**: Enhance error messages by providing variable substitution.
-- **Algebraic Equation Solving**: Enable algebraic solving for equations with variables on both sides.
-- **Fractional Output**: Reduce results to improper fractions when applicable and provide approximate values.
+- **Variable Substitution**: Substitute variable for it's value instead of saying that the identifier "=" is not found.
+	* Variables should be defined/declared w/ `=`, but if `=` isn't present, variables should be parsed and substituted with their value to be evaluated(`a=2;a+2`=>**4**).
+- **Algebraic Equation Solving**: Algebraic solving(do on both sides).
+	* ex.: a+2=2+3 => a=3
+	* allow for algebraic expression solving such as `a+2=2+3` where the output will be `a=3` since the 2's cancel out. this solving for both sides will apply for all operators.
+- **Fractional Output**: Reduce results to improper fractions when applicable and provide approximate values as well(output as vector/array or something).
+	* Might involve more framework adjusting since `Evaluate` only returns ints currently & i might wanna return matrices, vectors, & arrays/tuples.
+	* Make `factor tree` function to simplify roots such as `sqrt(8)`=`2*sqrt(2)` because 8/2=4/2=2, so there's a pair of 2's and a leftover 2 in the sqrt.
 - **Function Expansion**: Add functions like `sqrt`, `log`, `ln`, etc.
-- **Global Variables**: Include global or predefined variables like `i` (imaginary unit) and `e` (Euler's number).
+- **Global Variables**: Include global/predefined variables like `i` (imaginary unit) & `e` (Euler's number).
 
 ## Contribute
 
