@@ -3,7 +3,6 @@
 
 **Logic Lingo** is an interpreter that solves algebraic expressions.
 
-![TODO section](##-TODO)
 ```diff
 - This project is early in development, so there's still much to do as can be seen at the bottom of this `README.md` file in the `TODO` section.
 + Feel free to contribute to this project :)
