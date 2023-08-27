@@ -3,6 +3,13 @@
 
 **Logic Lingo** is an interpreter that solves algebraic expressions.
 
+```diff
+- This project is early in development, so there's still much to do as can be seen at the bottom of this `README.md` file in the [link](## TODO) section.
++ Feel free to contribute to this project :)
+- Math is 4 nerds =)
++ (Lol, jk)
+```
+
 ## Overview
 
 This custom language is designed to provide a simple but extensible platform for performing arithmetic operations, variable assignments, and function calls. It supports basic arithmetic operations such as addition, subtraction, multiplication, division, and modulous as well as variable definitions and function calls.
@@ -10,7 +17,7 @@ This custom language is designed to provide a simple but extensible platform for
 
 > The end result is more of an algebraic calculator than a programming language, but the framework is prevalent for higher development.
 
-### Syntax Tree
+## Syntax Tree
 
 The language's syntax tree is hierarchical, with expressions composed of terms, terms composed of factors, and factors being numbers, identifiers (variables), or sub-expressions enclosed in parentheses. This structure allows for the evaluation of complex mathematical expressions.
 
