@@ -1,0 +1,12 @@
+program ::= statement { ";" statement } ;
+statement ::= variable-definition | expression | function-call ;
+variable-definition ::= identifier "=" expression ;
+expression ::= term { ("+" | "-") term } ;
+term ::= factor { ("*" | "/") factor } ;
+factor ::= number | identifier | "(" expression ")" ;
+function-call ::= function-name "(" expression ")" ;
+function-name ::= "print" | "log" | "ln" | "sin" | "cos" | "tan" ; // Add other functions as needed
+number ::= digit { digit } ;
+identifier ::= letter { letter | digit | "_" } ;
+letter ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z" ;
+digit ::= "0" | "1" | "2" | ... | "9" ;
