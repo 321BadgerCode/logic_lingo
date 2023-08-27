@@ -14,6 +14,21 @@ This custom language is designed to provide a simple but extensible platform for
 
 The language's syntax tree is hierarchical, with expressions composed of terms, terms composed of factors, and factors being numbers, identifiers (variables), or sub-expressions enclosed in parentheses. This structure allows for the evaluation of complex mathematical expressions.
 
+```ebnf
+program ::= statement { ";" statement } ;
+statement ::= variable-definition | expression | function-call ;
+variable-definition ::= identifier "=" expression ;
+expression ::= term { ("+" | "-") term } ;
+term ::= factor { ("*" | "/") factor } ;
+factor ::= number | identifier | "(" expression ")" ;
+function-call ::= function-name "(" expression ")" ;
+function-name ::= "print" | "log" | "ln" | "sin" | "cos" | "tan" ; // Add other functions as needed
+number ::= digit { digit } ;
+identifier ::= letter { letter | digit | "_" } ;
+letter ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z" ;
+digit ::= "0" | "1" | "2" | ... | "9" ;
+```
+
 ## How It Works
 
 The language consists of a lexer, a parser, and an evaluator. Here's how it works step by step:
