@@ -3,8 +3,9 @@
 
 **Logic Lingo** is an interpreter that solves algebraic expressions.
 
+> [link](## TODO)
 ```diff
-- This project is early in development, so there's still much to do as can be seen at the bottom of this `README.md` file in the [link](## TODO) section.
+- This project is early in development, so there's still much to do as can be seen at the bottom of this `README.md` file in the `TODO` section.
 + Feel free to contribute to this project :)
 - Math is 4 nerds =)
 + (Lol, jk)
